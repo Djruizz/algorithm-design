@@ -9,9 +9,9 @@ def sumarVecinos(a):
         current = []
         for c in range(len(a[0])):
             current.append(a[c])
-            current[c] += a[c+1] if a[c+1] else 0
-            current[c] += a[c-1] if a[c-1] else 0
-            current[c] += a[f+1] if a[f+1] else 0
-            current[c] += a[f-1] if a[f-1] else 0
+            
+        result.append(current)
+    return result
+
 
 print(sumarVecinos(A))
